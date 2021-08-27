@@ -1,5 +1,5 @@
 # Unity Bezier Curves
-A simple C# library to create Bezier curves of any order in Unity3D.
+A simple C# library to create 2D Bezier curves of any order in Unity3D.
 
 ![Bezier Curve Example Gif](bezierexample.gif)
 ###### Example of a cubic bezier curve
