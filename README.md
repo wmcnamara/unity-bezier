@@ -18,7 +18,7 @@ To get an idea of what the system can do, open the project in Unity and go to th
 
 All of the functionality of this repository is contained in the Bezier.cs file, so you may discard everything else if you wish to do so.
 
-### Examples:
+## Examples:
 
 **Plotting a bezier curve of N order? (any number of control points)**
 
