@@ -20,7 +20,7 @@ All of the functionality of this repository is contained in the Bezier.cs file, 
 
 ### Examples:
 
-**Plotting a bezier curve with N order? (any number of control points)**
+**Plotting a bezier curve of N order? (any number of control points)**
 
 Use the `NOrderBezierInterp` function.
 ```c#
