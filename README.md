@@ -63,5 +63,4 @@ for (float i = 0; i < 1; i += 1f / pointCount)
 ```
 
 ## Keep in mind
-If you know you will be working with Bezier curves of order 3 or 4 (quadratic or cubic), prefer the `QuadraticBezierInterp` or `CubicBezierInterp`
-functions over `NOrderBezierInterp`, as they're faster than `NOrderBezierInterp` for their respective order.
+If you know you will be working with Bezier curves of order 3 or 4 (quadratic or cubic), prefer the `QuadraticBezierInterp` or `CubicBezierInterp` functions over `NOrderBezierInterp`, as they're faster than `NOrderBezierInterp` for their respective order.
