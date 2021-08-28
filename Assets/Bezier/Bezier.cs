@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Bezier
+public static class Bezier
 {
     //Gets a point along a line defined by the two ends p1 and p2, with the interpolant t
     public static Vector2 LineLerp(Vector2 p1, Vector2 p2, float t)
