@@ -38,9 +38,9 @@ for (float i = 0; i < 1; i += 1f / pointCount)
 }
 ```
 
-**Plotting a cubic bezier curve?**
+**Plotting a quadratic bezier curve?**
 
-Use the `CubicBezierInterp` function.
+Use the `QuadraticBezierInterp` function.
 ```c#
 /*
     Assign these in the inspector
@@ -56,7 +56,7 @@ int pointCount = 20; //Number of points to plot the curve with
 //Loop through values of i to create the graph, spawning points at each step
 for (float i = 0; i < 1; i += 1f / pointCount)
 {
-    Vector2 point = Bezier.CubicBezierInterp(p1, p2, p3, i);
+    Vector2 point = Bezier.QuadraticBezierInterp(p1, p2, p3, i);
 
     DrawPoint(point); //Your function for drawing the point in unity. (Example of this in the example scene)
 }
