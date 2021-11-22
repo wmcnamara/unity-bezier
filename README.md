@@ -64,3 +64,11 @@ for (float i = 0; i < 1; i += 1f / pointCount)
 
 ## Keep in mind
 If you know you will be working with Bezier curves of order 3 or 4 (quadratic or cubic), prefer the `QuadraticBezierInterp` or `CubicBezierInterp` functions over `NOrderBezierInterp`, as they're faster than `NOrderBezierInterp` for their respective order.
+
+
+## Benchmarking
+If you are concerned about performance, the Test.cs script can output benchmark diagnostics to help you decide if this project is right for you.
+
+Simply uncomment the `#define BEZIER_BENCHMARK` at the top of the `Test.cs` file, and the runtime of the curve calculation will be outputted to the console.
+
+You can change the interpolation function by modifiying the for loop in the update function for Test.cs.
