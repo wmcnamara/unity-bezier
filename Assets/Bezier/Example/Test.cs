@@ -28,6 +28,9 @@ public class Test : MonoBehaviour
             Debug.LogWarning("Point count cannot be less than 2");
         }
 
+#if BEZIER_BENCHMARK
+        var watch = System.Diagnostics.Stopwatch.StartNew();
+#endif
         //Loop through values of t to create the graph, spawning points at each step
         for (float i = 0; i < 1; i += 1f / pointCount)
         {
@@ -35,6 +38,12 @@ public class Test : MonoBehaviour
 
             graphPoints.Add(Instantiate(plotPointPrefab, position, Quaternion.identity));
         }
+
+#if BEZIER_BENCHMARK
+        watch.Stop();
+        var elapsedMs = watch.ElapsedMilliseconds;
+        Debug.Log(elapsedMs);
+#endif
     }
 
     private void Start()
