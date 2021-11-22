@@ -1,4 +1,6 @@
-﻿using System.Collections;
+﻿//#define BEZIER_BENCHMARK
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -27,7 +29,6 @@ public class Test : MonoBehaviour
             pointCount = 10;
             Debug.LogWarning("Point count cannot be less than 2");
         }
-
 #if BEZIER_BENCHMARK
         var watch = System.Diagnostics.Stopwatch.StartNew();
 #endif
