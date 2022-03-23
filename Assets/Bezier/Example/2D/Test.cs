@@ -35,7 +35,7 @@ public class Test : MonoBehaviour
         //Loop through values of t to create the graph, spawning points at each step
         for (float i = 0; i < 1; i += 1f / pointCount)
         {
-            Vector2 position = Bezier.NOrderBezierInterp(controlPoints, i);
+            Vector2 position = Bezier2D.NOrderBezierInterp(controlPoints, i);
 
             graphPoints.Add(Instantiate(plotPointPrefab, position, Quaternion.identity));
         }
